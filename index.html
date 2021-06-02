@@ -390,9 +390,9 @@
         </div>
         <div class="footer-form-container">
             <h3 class="footer-modal-title">Подпишитесь на рассылку</h3>
-            <form class="footer-form"  name="signup_form" autocomplete="on" novalidate>
+            <form action="#" method="GET" class="footer-form"  name="footer-form" autocomplete="on" novalidate>
                 <label  >
-                    <input class="email-form" type="email" name="email" placeholder="E-mail" />
+                    <input class="email-form" type="email" name="email" placeholder="E-mail" required />
                 </label>
                 <button class="footer-submit-btn" type="submit">Подписаться
                     <svg class="footer-btn-icon">
@@ -406,6 +406,36 @@
     <!--MODAL WINDOW-->
    <div class="backdrop is-hidden" data-modal>
        <div class="modal">
+           <form  method="GET" class="modal-form" name="modal-form">
+               <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+               <label for="">
+                   <input type="text" name="contact-name" class="modal-contact-input" required minlength="2">
+                    <svg class="modal-contact-icon">
+                        <use href="./images/sprite.svg#icon-name" width="12" height="12"></use>
+                    </svg>
+               </label>
+               <label for="">
+                    <input type="tel" name="contact-tel" class="modal-contact-input" required 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
+                    <svg class="modal-contact-icon">
+                        <use href="./images/sprite.svg#icon-tel" width="13" height="13"></use>
+                    </svg>
+               </label>
+               <label for="">
+                    <input type="email" name="contact-mail" class="modal-contact-input" required>
+                    <svg class="modal-contact-icon">
+                        <use href="./images/sprite.svg#icon-mail" width="15" height="12"></use>
+                    </svg>
+               </label>
+                <textarea name="contact-comment" class="modal-contact-comment" ></textarea>
+                <label>
+                    <input type="checkbox" name="terms-contract" class="modal-checkbox" value="accept">
+                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                </label>
+                <button class="modal-submit-btn" type="submit">Отправить
+                </button>
+               
+           </form>
            <button type="button" class="modal-close-btn" data-modal-close>
                <svg class="close-btn-icon">
                    <use href="./images/sprite.svg#icon-Vector"></use>
