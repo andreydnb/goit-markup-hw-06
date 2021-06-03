@@ -748,7 +748,7 @@ body {
   height: 15px;
   margin-right: 7px;
 
-  background-image: url("/images/icons/icon-check-off.svg");
+  background-image: url("../images/icons/icon-check-off.svg");
 }
 .checkbox-text {
   font-size: 14px;
@@ -759,6 +759,6 @@ body {
   color: var(--accent-color);
 }
 .modal-checkbox:checked + .icon-check {
-  background-image: url("/images/icons/icon-check-on.svg");
+  background-image: url("../images/icons/icon-check-on.svg");
 }
 /* =============END MODAL WINDOW============= */
